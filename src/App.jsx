@@ -1,3 +1,3 @@
 export default function App() {
-  return <div>app</div>;
+  return <div className=" font-FoundryMonoline">app</div>;
 }
