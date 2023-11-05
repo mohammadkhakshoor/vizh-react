@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         FoundryMonoline: ["FoundryMonoline-Regular"],
+        inter: ["Inter"],
       },
       colors: {
         primary: "#F8F8F8",
