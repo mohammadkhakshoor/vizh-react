@@ -6,6 +6,12 @@ export default {
       fontFamily: {
         FoundryMonoline: ["FoundryMonoline-Regular"],
       },
+      colors: {
+        primary: "#F8F8F8",
+        secondary: "#93D39B",
+        PrimarytextColor: "#000",
+        SecondarytextColor: "#000",
+      },
     },
   },
   plugins: [],
