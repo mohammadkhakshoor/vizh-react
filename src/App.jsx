@@ -1,14 +1,14 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AppLayout from "./ui/Applayout";
 import CartInfo from "./components/CartInfo";
-import CartContainer from "./components/CartContainer";
+import NftContainer from "./components/NftContainer";
 
 export default function App() {
   const router = createBrowserRouter([
     {
       element: <AppLayout />,
       children: [
-        { path: "/", element: <CartContainer /> },
+        { path: "/", element: <NftContainer /> },
         {
           path: "product",
           element: <CartInfo />,
