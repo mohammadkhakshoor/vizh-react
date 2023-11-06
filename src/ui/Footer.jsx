@@ -1,4 +1,4 @@
-import { logoBgLight } from "../../public/assets";
+import { logoBgLight } from "../assets/index";
 import BigButton from "../components/Buttons/BigButton";
 
 const Footer = () => {

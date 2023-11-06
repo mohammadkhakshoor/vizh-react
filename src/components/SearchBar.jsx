@@ -1,4 +1,4 @@
-import { searchIcon } from "../../public/assets";
+import { searchIcon } from "../assets/index";
 
 const SearchBar = () => {
   return (

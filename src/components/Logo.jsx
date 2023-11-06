@@ -1,4 +1,4 @@
-import { logoBgDark, logoBgLight } from "../../public/assets";
+import { logoBgDark, logoBgLight } from "../assets/index";
 
 const Logo = ({ type }) => {
   if (type === "header") {
