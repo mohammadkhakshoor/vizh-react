@@ -1,12 +1,14 @@
+import { useFakeData } from "../contexts/FakeDataContext";
 import NftCart from "./NftCart";
 
 const NftContainer = () => {
+  const data = useFakeData();
   return (
-    <div class="max-container ">
+    <div className="max-container ">
       <div className="nft-container">
-        <NftCart />
-        <NftCart />
-        <NftCart />
+        {data.map((item) => {
+          return <NftCart item={item} key={item.id} />;
+        })}
       </div>
     </div>
   );
