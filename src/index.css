@@ -6,13 +6,6 @@
 @tailwind utilities;
 
 @layer utilities {
-  .bold-plc::placeholder {
-    font-weight: bold;
-    color: #d1d1d1;
-  }
-}
-
-@layer utilities {
   .max-container {
     @apply max-w-7xl  mx-auto;
   }

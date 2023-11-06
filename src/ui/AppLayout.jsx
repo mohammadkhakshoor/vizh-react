@@ -4,7 +4,7 @@ import Header from "./Header";
 
 const Applayout = () => {
   return (
-    <div className="max-container font-FoundryMonoline ">
+    <div className=" font-FoundryMonoline ">
       <Header />
       <main>
         <Outlet />
