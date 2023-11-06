@@ -5,7 +5,7 @@ const NftCart = ({ item }) => {
       <p className="px-[1.5rem] py-[0.875rem] text-xl font-normal leading-[1.875rem] shadow-md rounded-tr-xl rounded-tl-xl">
         {nftName}
       </p>
-      <img className="shadow-md w-full h-full" src={image} alt="img" />
+      <img className="shadow-md object-cover" src={image} alt="img" />
       <div className=" flex flex-col gap-[0.3rem] px-[1.375rem] py-[0.812rem] shadow-md rounded-bl-xl rounded-br-xl">
         <div className="flex items-center gap-4 ">
           <img src={avatar} className="w-7 h-7 rounded-full" alt="user" />
