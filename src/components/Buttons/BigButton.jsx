@@ -3,7 +3,7 @@ const BigButton = ({ children, type }) => {
     <button
       className={` rounded-full text-xl ${
         type === "header" &&
-        "font-bold  bg-black text-white py-[0.687rem] px-[1.187rem]  font-FoundryMonoline hover:text-secondary transition-all duration-300"
+        "font-bold  bg-black text-white py-[0.687rem] px-[1.187rem]  font-FoundryMonoline hover:text-secondary transition-all duration-300 max-sm:bg-white max-sm:text-black max-sm:text-base max-sm:py-[0.4rem] max-sm:px-[1rem]"
       } 
       ${
         type === "footer" &&

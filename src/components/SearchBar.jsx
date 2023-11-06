@@ -10,7 +10,7 @@ const SearchBar = () => {
         <input
           type="text"
           placeholder="Search NFT, Artist, Exhibition..."
-          className="block w-full pl-[4rem] py-2 rounded-full font-bold bg-[#F5F5F5] bold-plc  " //bold-blc is a custom style for placeholder
+          className="block w-full pl-[4rem] py-2 rounded-full font-bold bg-[#F5F5F5] bold-plc-header placeholder-[#d1d1d1] " //bold-blc is a custom style for placeholder
         />
       </div>
     </form>
