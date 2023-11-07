@@ -2,8 +2,10 @@ import { useParams } from "react-router-dom";
 import { useFakeData } from "../contexts/FakeDataContext";
 import { checkSign } from "../assets";
 import BackButton from "./Buttons/BackButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ModalLoader from "./ModalLoader";
+import LoadingPurchase from "./loadingPurchase";
+import SuccessMessage from "./SuccessMessage";
 
 const NftInfo = () => {
   const data = useFakeData();
@@ -11,21 +13,35 @@ const NftInfo = () => {
   const { lastName, nftName, price, image } = data.find((nft) => nft.id === id);
   const calculatePercentage = (2.5 / 100) * Number(price);
   const finalPrice = (calculatePercentage + Number(price)).toFixed(3);
-  const [submitPurchase, setSubmitPurchase] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [confirmedBuy, setConfirmedBuy] = useState(true);
 
-  function handleSubmitPurchase() {
-    setSubmitPurchase(true);
+  function handleLoading() {
+    setIsLoading(true);
+    setConfirmedBuy(true);
   }
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setConfirmedBuy(false);
+    }, 2000);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [confirmedBuy]);
 
   return (
     <>
-      {submitPurchase && (
-        <ModalLoader
-          submitPurchase={submitPurchase}
-          setSubmitPurchase={setSubmitPurchase}
-          handleSubmitPurchase={handleSubmitPurchase}
-        />
+      {isLoading && (
+        <ModalLoader>
+          {confirmedBuy ? (
+            <LoadingPurchase />
+          ) : (
+            <SuccessMessage setIsLoading={setIsLoading} />
+          )}
+        </ModalLoader>
       )}
+
       <div className="max-container sm:max-lg:px-24 lg:px-[3.125rem] lg:pt-[6.625rem] lg:pb-[3.375rem] py-10 px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-5 ">
           <div className="grid grid-cols-1 gap-12 px-[2rem] lg:px-[3.06rem] py-[1.6rem] bg-[#F5F5F5]  rounded-xl ">
@@ -86,8 +102,8 @@ const NftInfo = () => {
 
             <button
               className="justify-self-center text-stone-50 lg:text-[2rem] font-bold bg-black leading-10 lg:px-[6rem] py-[1rem] rounded-full lg:min-w-[28rem] min-w-[15rem]  hover:text-secondary transition-all duration-300 shadow-md px-7 text-[1.2rem]"
-              onClick={handleSubmitPurchase}
-              disabled={submitPurchase}
+              onClick={handleLoading}
+              disabled={isLoading}
             >
               Submit Purchase
             </button>
