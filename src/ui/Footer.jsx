@@ -22,7 +22,7 @@ const Footer = () => {
             <form className="flex flex-col justify-between lg:flex-row  gap-[1.25rem] lg:items-end ">
               <input
                 type="text"
-                className="w-full border-b-[0.135rem] border-footerLinkColor bg-transparent leading-none placeholder-footerLinkColor focus:outline-none h-12"
+                className="w-full border-b-[0.135rem] border-footerLinkColor bg-transparent leading-none placeholder-footerLinkColor focus:outline-none h-12 focus:border-white transition-all"
                 placeholder="Enter your Email-Adress"
               />
               <div className="max-w-2xl">
