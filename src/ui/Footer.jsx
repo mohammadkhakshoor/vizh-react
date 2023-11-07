@@ -3,7 +3,7 @@ import BigButton from "../components/Buttons/BigButton";
 
 const Footer = () => {
   return (
-    <footer className="bg-black">
+    <footer className="bg-black ">
       <div className="max-container text-white py-10 px-8  sm:px-[4.187rem] sm:pt-[3.637rem] sm:pb-[5.75rem] lg:px-[8.187rem] lg:pt-[3.637rem] lg:pb-[5.75rem]">
         <div className="flex flex-col sm:flex-row items-center gap-6 justify-between font-inter mb-16 lg:mb-[5.44rem]">
           <img
@@ -31,30 +31,48 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  justify-items-start w-auto gap-8 lg:gap-14 ">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  justify-items-start w-auto gap-8 lg:gap-14 ">
           <ul className="flex flex-col gap-[0.5rem] lg:gap-[1.5rem]">
-            <li className="text-[1.75rem] text-white font-bold">
+            <li className="text-[1.40rem] sm:text-[1.60rem] lg:text-[1.75rem] text-white font-bold">
               Mintii Account
             </li>
-            <li className="text-[1.75rem] text-footerLinkColor">Profile</li>
-            <li className="text-[1.75rem] text-footerLinkColor">Setting</li>
-            <li className="text-[1.75rem] text-footerLinkColor">
+            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
+              Profile
+            </li>
+            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
+              Setting
+            </li>
+            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
               Privacy policy
             </li>
-            <li className="text-[1.75rem] text-footerLinkColor">
+            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
               Terms and condition
             </li>
           </ul>
           <ul className="flex flex-col gap-[0.8rem] lg:gap-[1.5rem] lg:pl-10">
-            <li className="text-[1.75rem] text-white font-bold">Collections</li>
-            <li className="text-[1.75rem] text-footerLinkColor">Mint NFT</li>
-            <li className="text-[1.75rem] text-footerLinkColor">Buy NFT</li>
-            <li className="text-[1.75rem] text-footerLinkColor">Sell NFT</li>
+            <li className="text-[1.40rem] lg:text-[1.75rem] text-white font-bold">
+              Collections
+            </li>
+            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
+              Mint NFT
+            </li>
+            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
+              Buy NFT
+            </li>
+            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
+              Sell NFT
+            </li>
           </ul>
           <ul className="flex flex-col gap-[0.8rem] lg:gap-[1.5rem]">
-            <li className="text-[1.75rem] text-white font-bold">About Us</li>
-            <li className="text-[1.75rem] text-footerLinkColor">Mintii</li>
-            <li className="text-[1.75rem] text-footerLinkColor">Artists</li>
+            <li className="text-[1.40rem] lg:text-[1.75rem] text-white font-bold">
+              About Us
+            </li>
+            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
+              Mintii
+            </li>
+            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
+              Artists
+            </li>
           </ul>
         </div>
       </div>

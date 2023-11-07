@@ -1,7 +1,7 @@
 import { createContext, useContext } from "react";
-import { fakeItemGenerator } from "../utils/generateFakeItems";
-const data = fakeItemGenerator(10);
+import data from "../utils/getFakeData";
 const FakeData = createContext();
+
 const FakeDataProvider = ({ children }) => {
   return <FakeData.Provider value={data}>{children}</FakeData.Provider>;
 };

@@ -1,18 +1,23 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AppLayout from "./ui/Applayout";
-import CartInfo from "./components/CartInfo";
+import NftInfo from "./components/NftInfo";
 import NftContainer from "./components/NftContainer";
 import { FakeDataProvider } from "./contexts/FakeDataContext";
+import Homepage from "./ui/Homepage";
 
 export default function App() {
   const router = createBrowserRouter([
     {
       element: <AppLayout />,
       children: [
-        { path: "/", element: <NftContainer /> },
+        { path: "/", element: <Homepage /> },
         {
-          path: "product",
-          element: <CartInfo />,
+          path: "/collections",
+          element: <NftContainer />,
+        },
+        {
+          path: "/collections/:id",
+          element: <NftInfo />,
         },
       ],
     },
@@ -20,7 +25,7 @@ export default function App() {
 
   return (
     <FakeDataProvider>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </FakeDataProvider>
   );
 }

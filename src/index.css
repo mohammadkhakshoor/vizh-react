@@ -15,3 +15,12 @@
     @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-2  xl:grid-cols-4 justify-items-center gap-[2rem] sm:px-[3.5rem] pt-[3.5rem] pb-[6rem];
   }
 }
+body {
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1023px) {
+  html {
+    font-size: 108%;
+  }
+}
