@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { logoBgLight } from "../assets/index";
 import BigButton from "../components/Buttons/BigButton";
 
@@ -22,7 +23,8 @@ const Footer = () => {
             <form className="flex flex-col justify-between lg:flex-row  gap-[1.25rem] lg:items-end ">
               <input
                 type="text"
-                className="w-full border-b-[0.135rem] border-footerLinkColor bg-transparent leading-none placeholder-footerLinkColor focus:outline-none h-12"
+                to={"/"}
+                className="w-full border-b-[0.135rem] border-footerLinkColor bg-transparent leading-none placeholder-footerLinkColor focus:outline-none h-12 focus:border-white transition-all"
                 placeholder="Enter your Email-Adress"
               />
               <div className="max-w-2xl">
@@ -36,43 +38,61 @@ const Footer = () => {
             <li className="text-[1.40rem] sm:text-[1.60rem] lg:text-[1.75rem] text-white font-bold">
               Mintii Account
             </li>
-            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
-              Profile
-            </li>
-            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
-              Setting
-            </li>
-            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
-              Privacy policy
-            </li>
-            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
-              Terms and condition
-            </li>
+            <Link to={"/"}>
+              <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor hover:text-white transition-all">
+                Profile
+              </li>
+            </Link>
+            <Link to={"/"}>
+              <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor hover:text-white transition-all">
+                Setting
+              </li>
+            </Link>
+            <Link to={"/"}>
+              <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor hover:text-white transition-all">
+                Privacy policy
+              </li>
+            </Link>
+            <Link to={"/"}>
+              <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor hover:text-white transition-all">
+                Terms and condition
+              </li>
+            </Link>
           </ul>
           <ul className="flex flex-col gap-[0.8rem] lg:gap-[1.5rem] lg:pl-10">
             <li className="text-[1.40rem] lg:text-[1.75rem] text-white font-bold">
               Collections
             </li>
-            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
-              Mint NFT
-            </li>
-            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
-              Buy NFT
-            </li>
-            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
-              Sell NFT
-            </li>
+            <Link to={"/"}>
+              <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor hover:text-white transition-all">
+                Mint NFT
+              </li>
+            </Link>
+            <Link to={"/"}>
+              <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor hover:text-white transition-all">
+                Buy NFT
+              </li>
+            </Link>
+            <Link to={"/"}>
+              <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor hover:text-white transition-all">
+                Sell NFT
+              </li>
+            </Link>
           </ul>
           <ul className="flex flex-col gap-[0.8rem] lg:gap-[1.5rem]">
             <li className="text-[1.40rem] lg:text-[1.75rem] text-white font-bold">
               About Us
             </li>
-            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
-              Mintii
-            </li>
-            <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor">
-              Artists
-            </li>
+            <Link to={"/"}>
+              <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor hover:text-white transition-all">
+                Mintii
+              </li>
+            </Link>
+            <Link to={"/"}>
+              <li className="text-[1.40rem] lg:text-[1.75rem] text-footerLinkColor hover:text-white transition-all">
+                Artists
+              </li>
+            </Link>
           </ul>
         </div>
       </div>
