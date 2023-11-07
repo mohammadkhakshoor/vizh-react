@@ -10,7 +10,7 @@ const NftInfo = () => {
   const calculatePercentage = (2.5 / 100) * Number(price);
   const finalPrice = (calculatePercentage + Number(price)).toFixed(3);
   return (
-    <div className="max-container lg:px-[3.125rem] lg:pt-[6.625rem] lg:pb-[3.375rem] py-10 px-6">
+    <div className="max-container sm:max-lg:px-24 lg:px-[3.125rem] lg:pt-[6.625rem] lg:pb-[3.375rem] py-10 px-6">
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-5 ">
         <div className="grid grid-cols-1 gap-12 px-[2rem] lg:px-[3.06rem] py-[1.6rem] bg-[#F5F5F5]  rounded-xl ">
           <div className="flex flex-col gap-[1.5rem] ">
@@ -35,11 +35,11 @@ const NftInfo = () => {
               collection.
             </p>
           </div>
-          <div className="flex flex-col gap-[1.6rem] lg:gap-[4.125rem] text-black">
-            <div className="flex flex-col lg:gap-[2.625rem]">
-              <div className="flex lg:gap-10 items-center  ">
+          <div className="flex flex-col gap-[2.2rem] lg:gap-[4.125rem] text-black">
+            <div className="flex flex-col gap-[1rem] lg:gap-[2.625rem]">
+              <div className="flex gap-3 lg:gap-10 items-center  ">
                 <p className="text-base font-bold min-w-[5rem]">Floor Price</p>
-                <div className="flex gap-5 items-center bg-white px-5 py-2 rounded-2xl">
+                <div className="flex gap-5 items-center bg-white px-3 lg:px-5 py-2 rounded-2xl">
                   <span className="text-sm font-bold min-w-[2.8rem]">
                     {Number(price)}
                   </span>
@@ -48,16 +48,16 @@ const NftInfo = () => {
                   </span>
                 </div>
               </div>
-              <div className="flex lg:gap-10 items-center">
+              <div className="flex gap-3 lg:gap-10 items-center">
                 <p className="text-base font-bold min-w-[5rem]">Mintii fee</p>
                 <span className="text-sm font-bold min-w-[2.8rem] px-5">
                   2.5%
                 </span>
               </div>
             </div>
-            <div className="flex lg:gap-10 items-center">
+            <div className="flex gap-3 lg:gap-10 items-center">
               <p className="text-base font-bold min-w-[5rem]">You will pay</p>
-              <div className="flex gap-5 items-center bg-white px-5 py-2 rounded-2xl">
+              <div className="flex gap-5 items-center bg-white px-3 lg:px-5 py-2 rounded-2xl">
                 <span className="text-sm font-bold min-w-[2.8rem]">
                   {finalPrice}
                 </span>
@@ -68,7 +68,7 @@ const NftInfo = () => {
             </div>
           </div>
 
-          <button className="justify-self-center text-stone-50 lg:text-[2rem] font-bold bg-black leading-10 lg:px-[6rem] py-[1rem] rounded-full lg:min-w-[28rem] min-w-[18rem]  hover:text-secondary transition-all duration-300 shadow-md px-7 text-[1.2rem]">
+          <button className="justify-self-center text-stone-50 lg:text-[2rem] font-bold bg-black leading-10 lg:px-[6rem] py-[1rem] rounded-full lg:min-w-[28rem] min-w-[15rem]  hover:text-secondary transition-all duration-300 shadow-md px-7 text-[1.2rem]">
             Submit Purchase
           </button>
         </div>
