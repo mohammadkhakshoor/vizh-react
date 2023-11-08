@@ -6,17 +6,17 @@ const SuccessMessage = ({ setIsLoading }) => {
   }
   return (
     <div
-      className="bg-white h-[70%] w-[60%] flex flex-col gap-6 items-center justify-center rounded-xl max-sm:w-[80%] max-sm:h-[60%]"
+      className="flex h-[70%] w-[60%] flex-col items-center justify-center gap-6 rounded-xl bg-white max-sm:h-[60%] max-sm:w-[80%]"
       onClick={handleRemoveModal}
     >
       <i>
         <img
           src={successIcon}
           alt="success icon "
-          className="max-sm:w-[4rem] max-sm:h-[4rem]"
+          className="max-sm:h-[4rem] max-sm:w-[4rem]"
         />
       </i>
-      <p className="text-[2.1rem] font-bold text-black max-sm:text-[1.4rem] text-center">
+      <p className="text-center text-[2.1rem] font-bold text-black max-sm:text-[1.4rem]">
         Bid submitted successfully...
       </p>
     </div>

@@ -3,11 +3,11 @@ const BigButton = ({ children, type }) => {
     <button
       className={` rounded-full text-xl ${
         type === "header" &&
-        "font-bold  bg-black text-white py-[0.687rem] px-[1.187rem]  font-FoundryMonoline hover:text-secondary transition-all duration-300 max-sm:bg-white max-sm:text-black max-sm:text-base max-sm:py-[0.4rem] max-sm:px-[1rem]"
+        "bg-black  px-[1.187rem] py-[0.687rem] font-FoundryMonoline font-bold  text-white transition-all duration-300 hover:text-secondary max-sm:bg-white max-sm:px-[1rem] max-sm:py-[0.4rem] max-sm:text-base max-sm:text-black"
       } 
       ${
         type === "footer" &&
-        "bg-secondary text-black font-inter py-[0.5rem] px-[3.25rem] font leading-10 hover:bg-[#2ea93d] transition-all duration-300"
+        "font bg-secondary px-[3.25rem] py-[0.5rem] font-inter leading-10 text-black transition-all duration-300 hover:bg-[#2ea93d]"
       }`}
     >
       {children}
