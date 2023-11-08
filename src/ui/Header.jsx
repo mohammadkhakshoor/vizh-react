@@ -3,8 +3,8 @@ import Logo from "../components/Logo";
 import SearchBar from "../components/SearchBar";
 const Header = () => {
   return (
-    <header className="max-container pt-[1rem] px-6 lg:pl-[3.06rem] lg:pr-[4.875rem] flex items-center justify-between   ">
-      <div className="flex items-center gap-6 w-full sm:w-[60%] xl:w-[50%]">
+    <header className="max-container flex items-center justify-between px-6 pt-[1rem] lg:pl-[3.06rem] lg:pr-[4.875rem]   ">
+      <div className="flex w-full items-center gap-6 sm:w-[60%] xl:w-[50%]">
         <Logo type="header" />
         <SearchBar />
       </div>

@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import AppLayout from "./ui/Applayout";
+import AppLayout from "./ui/AppLayout";
 import NftInfo from "./components/NftInfo";
 import NftContainer from "./components/NftContainer";
 import { FakeDataProvider } from "./contexts/FakeDataContext";

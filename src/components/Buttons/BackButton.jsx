@@ -8,7 +8,7 @@ const BackButton = () => {
   }
   return (
     <button
-      className=" min-w-[28rem] flex items-center justify-center lg:gap-5  justify-self-center text-black text-[2rem] font-bold bg-[#F5F5F5] leading-10 lg:px-[6rem] lg:py-[1rem] rounded-full   hover:text-secondary transition-all duration-300 shadow-md max-lg:fixed bottom-24 sm:bottom-10 right-10 max-lg:min-w-[auto] max-lg:text-[1.1rem] max-lg:gap-3 px-6 "
+      className=" bottom-24 right-10 flex min-w-[28rem] items-center  justify-center justify-self-center rounded-full bg-[#F5F5F5] px-6 text-[2rem] font-bold leading-10 text-black   shadow-md transition-all duration-300 hover:text-secondary max-lg:fixed max-lg:min-w-[auto] max-lg:gap-3 max-lg:text-[1.1rem] sm:bottom-10 lg:gap-5 lg:px-[6rem] lg:py-[1rem] "
       onClick={handleNavigate}
     >
       back
@@ -16,7 +16,7 @@ const BackButton = () => {
         <img
           src={backIcon}
           alt="back icon"
-          className="w-8 h-8 bg-slate-1 max-lg:w-5 max-lg:h-5"
+          className="bg-slate-1 h-8 w-8 max-lg:h-5 max-lg:w-5"
         />
       </span>
     </button>
