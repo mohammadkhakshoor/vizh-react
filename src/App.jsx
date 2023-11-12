@@ -4,6 +4,7 @@ import NftInfo from "./components/NftInfo";
 import NftContainer from "./components/NftContainer";
 import { FakeDataProvider } from "./contexts/FakeDataContext";
 import Homepage from "./ui/Homepage";
+import { SeachNftProvider } from "./contexts/SearchNftContext";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -25,7 +26,9 @@ export default function App() {
 
   return (
     <FakeDataProvider>
-      <RouterProvider router={router} />
+      <SeachNftProvider>
+        <RouterProvider router={router} />
+      </SeachNftProvider>
     </FakeDataProvider>
   );
 }
