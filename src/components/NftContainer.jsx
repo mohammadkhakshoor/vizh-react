@@ -8,7 +8,6 @@ const NftContainer = () => {
   const result = data.filter((NFT) =>
     NFT.nftName.toLowerCase().includes(query),
   );
-  console.log(result);
   return (
     <div className="max-container ">
       <div className="nft-container">

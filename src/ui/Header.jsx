@@ -1,6 +1,7 @@
 import BigButton from "../components/Buttons/BigButton";
 import Logo from "../components/Logo";
 import SearchBar from "../components/SearchBar";
+import ConnectButton from "../components/web3Modal/ConnectButton";
 const Header = () => {
   return (
     <header className="max-container flex items-center justify-between px-6 pt-[1rem] lg:pl-[3.06rem] lg:pr-[4.875rem]   ">
@@ -9,7 +10,8 @@ const Header = () => {
         <SearchBar />
       </div>
       <div className="max-sm:fixed max-sm:bottom-10 max-sm:right-10">
-        <BigButton type="header">Connect Wallet</BigButton>
+        {/* <BigButton type="header">Connect Wallet</BigButton> */}
+        <ConnectButton />
       </div>
     </header>
   );

@@ -5,6 +5,7 @@ import NftContainer from "./components/NftContainer";
 import { FakeDataProvider } from "./contexts/FakeDataContext";
 import Homepage from "./ui/Homepage";
 import { SeachNftProvider } from "./contexts/SearchNftContext";
+import WagmiConfigProvider from "./components/web3Modal/WaggmiConfig";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -25,10 +26,12 @@ export default function App() {
   ]);
 
   return (
-    <FakeDataProvider>
-      <SeachNftProvider>
-        <RouterProvider router={router} />
-      </SeachNftProvider>
-    </FakeDataProvider>
+    <WagmiConfigProvider>
+      <FakeDataProvider>
+        <SeachNftProvider>
+          <RouterProvider router={router} />
+        </SeachNftProvider>
+      </FakeDataProvider>
+    </WagmiConfigProvider>
   );
 }
