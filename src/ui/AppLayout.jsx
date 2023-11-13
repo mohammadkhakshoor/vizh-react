@@ -6,9 +6,11 @@ import ScrollToTop from "../Hooks/useScrollToTop";
 
 const Applayout = () => {
   return (
-    <div className=" font-FoundryMonoline ">
+    <div className="flex min-h-[100dvh] flex-col font-FoundryMonoline">
       <ScrollToTop />
-      <Header />
+      <div>
+        <Header />
+      </div>
       <main>
         <Outlet />
       </main>

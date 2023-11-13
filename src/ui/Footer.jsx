@@ -4,7 +4,7 @@ import BigButton from "../components/Buttons/BigButton";
 
 const Footer = () => {
   return (
-    <footer className="bg-black ">
+    <footer className="mt-auto bg-black">
       <div className="max-container px-8 py-10 text-white  sm:px-[4.187rem] sm:pb-[5.75rem] sm:pt-[3.637rem] lg:px-[8.187rem] lg:pb-[5.75rem] lg:pt-[3.637rem]">
         <div className="mb-16 flex flex-col items-center justify-between gap-6 font-inter sm:flex-row lg:mb-[5.44rem]">
           <img

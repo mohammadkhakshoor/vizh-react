@@ -20,7 +20,7 @@ const SearchBar = () => {
             handleSearchQuery(e.target.value.toLocaleLowerCase());
           }}
           placeholder="Search NFT, Artist, Exhibition..."
-          className="bold-plc-header block w-full rounded-full bg-[#F5F5F5] py-2 pl-[4rem] font-bold placeholder-[#d1d1d1] " //bold-blc is a custom style for placeholder
+          className=" active::outline-none block w-full rounded-full bg-[#F5F5F5] py-2 pl-[4rem] font-bold placeholder-[#d1d1d1] outline-none ring-black ring-offset-2 transition-all duration-300 focus:outline-none focus:ring-2"
         />
       </div>
     </form>
